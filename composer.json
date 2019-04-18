@@ -1,13 +1,25 @@
 {
-    "name": "legendarydrew/http-constants",
-    "description": "HTTP response codes provided as constants for PHP.",
+    "name": "repat/http-constants",
+    "description": "HTTP response codes provided as defined constants.",
+    "keywords": ["http", "https", "response", "status code", "ok", "not found", "numbers", "constants", "define"],
+    "homepage": "http://repat.de",
+    "license": "MIT",
+    "version" : "0.1",
+    "authors": [
+        {"name": "repat", "email": "repat@repat.de"},
+        {"name": "Drew Maughan"}
+    ],
 	"type": "library",
     "require": {
-		"php": ">=5"
+		"php": ">=5.6"
 	},
     "autoload": {
-        "psr-4": {
-            "PZL\\Http\\": "src"
-        }
+        "files" : [
+            "response_codes.php"
+        ]
+    },
+    "minimum-stability" : "dev",
+    "suggest": {
+        "symfony/http-foundation": "Best HTTP package out there"
     }
 }
